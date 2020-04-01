@@ -14,7 +14,7 @@ const getUserById = (userId: number): Promise<User> =>
 const getUserByName = (name: string): Promise<User> =>
   requestMockApi.get('/users', {
     params: {
-      name,
+      author: name,
     },
   })
 
