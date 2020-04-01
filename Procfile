@@ -1,1 +1,1 @@
-web: yarn run start:prod $PORT
+web: yarn run build:prod && yarn run mock:prod $PORT
