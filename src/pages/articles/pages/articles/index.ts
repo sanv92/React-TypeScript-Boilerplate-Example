@@ -1,0 +1,1 @@
+export { ArticlesPage } from './articles'

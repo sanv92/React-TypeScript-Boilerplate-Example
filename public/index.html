@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <% if (htmlWebpackPlugin.options.env === 'production'){ %>
+    <script>
+        if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+            __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+        }
+    </script>
+    <% } %>
+
+    <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "Post 3",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "title": "Post 4",
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "title": "Post 5",
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "title": "Post 6",
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "title": "Post 7",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "title": "Post 8",
+      "userId": 3
+    },
+    {
+      "id": 9,
+      "title": "Post 9",
+      "userId": 3
+    },
+    {
+      "id": 10,
+      "title": "Post 10",
+      "userId": 3
+    },
+    {
+      "id": 11,
+      "title": "Post 11",
+      "userId": 3
+    },
+    {
+      "id": 12,
+      "title": "Post 12",
+      "userId": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "author": "Sander",
+      "age": 27
+    },
+    {
+      "id": 2,
+      "author": "Alex",
+      "age": 15
+    },
+    {
+      "id": 3,
+      "author": "Jon",
+      "age": 30
+    }
+  ]
+}
