@@ -13,7 +13,7 @@
     "build:prod": "rimraf dist && cross-env NODE_ENV=production webpack",
     "mock": "yarn run mock:dev",
     "mock:dev": "cross-env MOCK_PORT=3002 BACKEND_PORT=8080 nodemon ./mock-server/server.development",
-    "mock:prod": "cross-env MOCK_PORT=3002 BACKEND_PORT=8080 nodemon ./mock-server/server.production",
+    "mock:prod": "cross-env MOCK_PORT=3002 nodemon ./mock-server/server.production",
     "test": "yarn run test:jest && yarn run test:linter",
     "test:jest": "jest ./test --coverage",
     "test:jest:watch": "jest ./test --watch",
