@@ -18,6 +18,7 @@
     "test:jest": "jest ./test --coverage",
     "test:jest:watch": "jest ./test --watch",
     "test:linter": "tsc --noEmit && eslint './src/**/*'",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
     "heroku-postbuild": "yarn install && yarn run build:prod"
   },
   "engines": {
