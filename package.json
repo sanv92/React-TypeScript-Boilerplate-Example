@@ -19,7 +19,7 @@
     "test:jest:watch": "jest ./test --watch",
     "test:linter": "tsc --noEmit && eslint './src/**/*'",
     "heroku-prebuild": "npm install yarn && YARN_PRODUCTION=false yarn install",
-    "heroku-postbuild": "node ./server.test.js"
+    "heroku-postbuild": "echo 'Sander'"
   },
   "heroku-run-build-script": true,
   "engines": {
