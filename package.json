@@ -18,8 +18,10 @@
     "test:jest": "jest ./test --coverage",
     "test:jest:watch": "jest ./test --watch",
     "test:linter": "tsc --noEmit && eslint './src/**/*'",
-    "heroku-prebuild": "npm install yarn && YARN_PRODUCTION=false yarn install"
+    "heroku-prebuild": "npm install yarn",
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn install && node ./server.test.js"
   },
+  "heroku-run-build-script": true,
   "engines": {
     "node": ">10"
   },
