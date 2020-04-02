@@ -106,7 +106,7 @@ export const UsersPage = (): ReactElement => {
                 goToUserNew()
               }}
             >
-              Create New Article
+              Create New User
             </Button>
           </Col>
         </Row>
