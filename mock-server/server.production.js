@@ -3,7 +3,7 @@ const express = require('express')
 const jsonServer = require('json-server')
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
-const { PORT } = process.env
+const PORT = process.env.PORT || 3002
 const DIST = path.join(`${__dirname}/../dist`)
 
 const router = express.Router()
@@ -20,7 +20,7 @@ router.use('/mock/api/v2', v2Router)
 router.use(
   '/api/*',
   createProxyMiddleware({
-    target: `http://localhost:${PORT || 3002}`,
+    target: `http://localhost:${PORT}`,
     changeOrigin: true,
   }),
 )
@@ -32,4 +32,4 @@ router.get('*', (req, res) => {
 serverDevelopment.use('/', router)
 
 console.log('PORT: ', PORT)
-serverDevelopment.listen(PORT || 3002)
+serverDevelopment.listen(PORT)
