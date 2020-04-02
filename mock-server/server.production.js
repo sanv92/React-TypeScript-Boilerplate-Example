@@ -20,7 +20,7 @@ router.use('/mock/api/v2', v2Router)
 router.use(
   '/api/*',
   createProxyMiddleware({
-    target: `http://localhost:${PORT}`,
+    target: `http://localhost:${PORT || 3002}`,
     changeOrigin: true,
   }),
 )
@@ -32,4 +32,4 @@ router.get('*', (req, res) => {
 serverDevelopment.use('/', router)
 
 console.log('PORT: ', PORT)
-serverDevelopment.listen(PORT)
+serverDevelopment.listen(PORT || 3002)

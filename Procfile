@@ -1,1 +1,1 @@
-web: yarn run mock:prod $PORT
+web: PORT=$PORT node server.test.js
