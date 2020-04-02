@@ -17,9 +17,7 @@
     "test": "yarn run test:jest && yarn run test:linter",
     "test:jest": "jest ./test --coverage",
     "test:jest:watch": "jest ./test --watch",
-    "test:linter": "tsc --noEmit && eslint './src/**/*'",
-    "heroku-prebuild": "npm install yarn && YARN_PRODUCTION=false yarn install",
-    "heroku-postbuild": "echo 'Sander'"
+    "test:linter": "tsc --noEmit && eslint './src/**/*'"
   },
   "heroku-run-build-script": true,
   "engines": {
