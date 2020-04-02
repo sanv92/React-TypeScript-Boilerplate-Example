@@ -166,6 +166,7 @@ export const UserFormPage: React.FC<Props> = ({
               id="age"
               name="age"
               as="select"
+              value={form.values.age}
               onChange={(properties: FormEvent): void => {
                 form.handleChange(properties)
               }}
