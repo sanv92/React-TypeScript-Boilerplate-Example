@@ -124,7 +124,7 @@
     "axios": "0.19.2",
     "bootstrap": "4.4.1",
     "date-fns": "2.11.1",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "formik": "2.1.4",
     "history": "4.10.1",
     "intl": "1.2.5",
